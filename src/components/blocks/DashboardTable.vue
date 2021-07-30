@@ -39,7 +39,7 @@
       </tr>
       </tbody>
     </table>
-    <h2 v-if="!users.length">No Employees</h2>
+    <h2 v-if="!users.length && ready">No Employees</h2>
     <Form @onAdd="addUser"/>
   </div>
 </template>

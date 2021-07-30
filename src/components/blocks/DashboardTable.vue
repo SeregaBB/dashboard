@@ -82,8 +82,11 @@ export default {
       this.ready = false;
       this.activeTab = tab;
       this.updateUsers();
+
+      const others = ['manager', 'developer', 'engineer'];
+
       this.users = tab === 1 ? this.users.filter(usr => usr.designation.toLowerCase() === 'designer') :
-          tab === 2 ? this.users.filter(usr => usr.designation.toLowerCase() !== 'designer') :
+          tab === 2 ? this.users.filter(usr => others.includes(usr.designation.trim().toLowerCase())) :
               this.users;
       this.ready = true;
     },

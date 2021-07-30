@@ -146,6 +146,21 @@ th:nth-child(2), td:nth-child(2) {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid img:after {
+  content: '';
+  font-size: 16px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a09f9f;
 }
 
 .grid h2 {

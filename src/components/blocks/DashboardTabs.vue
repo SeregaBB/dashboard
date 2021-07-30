@@ -17,7 +17,7 @@ export default {
   methods: {
     clickHandler (tab) {
       this.activeTab = tab;
-      this.$emit('changeTab', tab)
+      this.$root.$emit('changeTab', tab)
     }
   }
 }

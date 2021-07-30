@@ -1,13 +1,18 @@
 <template>
   <div class="wrapper">
     <h1>Dashboard</h1>
-    <button>+ Add Employee</button>
+    <button @click="openForm">+ Add Employee</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DashboardHeader'
+  name: 'DashboardHeader',
+  methods: {
+    openForm() {
+      this.$root.$emit('openForm');
+    }
+  }
 }
 
 </script>

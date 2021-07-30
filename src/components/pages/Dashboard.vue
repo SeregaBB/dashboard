@@ -20,7 +20,7 @@ export default {
 <style>
 *{
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 body {
   background: #F5F8FC;
